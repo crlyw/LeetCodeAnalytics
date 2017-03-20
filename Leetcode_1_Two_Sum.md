@@ -1,12 +1,12 @@
 # Two Sum
 
-####Description
+#### Description
 
 Given an array of integers, return **indices** of the two numbers such that they add up to a specific target.
 
 You may assume that each input would have **exactly** one solution, and you may not use the same element twice.
 
-####Example:
+#### Example:
 ```
 Given nums = [2, 7, 11, 15], target = 9,
 
@@ -14,13 +14,13 @@ Because nums[0] + nums[1] = 2 + 7 = 9,
 return [0, 1].
 ```
 
-####Tags
+#### Tags
 * Array
 * Hash Table
 
 ***
 
-####My original solutions
+#### My original solutions
 
 ``` Java
 public class Solution {
@@ -39,12 +39,12 @@ public class Solution {
 * Time Complexity: O(n^2)
 * Space Complexity: O(1)
 
-#####Analysis
+##### Analysis
 To solve this problem, I used brute-force, since the array was **not notified to be sorted**, so binary search was not useful here, the time complexity is n^2 level, so the efficiency is not good.
 
 ***
 
-####Other people's good solution
+#### Other people's good solution
 
 ``` Java
 public int[] twoSum(int[] nums, int target) {
@@ -64,5 +64,5 @@ public int[] twoSum(int[] nums, int target) {
 * Time Complexity: O(n)
 * Space Complexity: O(1)
 
-#####Analysis
+##### Analysis
 This method used the search table method, put the indexes and values into a map, significantly decrease the time complexity, and easy to understand, but pay attentation, please **regard the value of array to be the key**.
