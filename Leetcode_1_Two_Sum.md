@@ -22,7 +22,7 @@ return [0, 1].
 
 #### My original solutions
 
-``` Java
+```
 public class Solution {
     public int[] twoSum(int[] nums, int target) {
         for (int i = 0; i < nums.length; i++) {
@@ -46,7 +46,7 @@ To solve this problem, I used brute-force, since the array was **not notified to
 
 #### Other people's good solution
 
-``` Java
+```
 public int[] twoSum(int[] nums, int target) {
         int[] result = new int[2];
         Map<Integer, Integer> map = new HashMap<Integer, Integer>();
